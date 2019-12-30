@@ -26,7 +26,7 @@ class ScrollableHeader extends Component {
                     height: 0,
                 }}
             >
-                {children}
+                {this.props.children}
             </Animated.View>
         );
     }
