@@ -1,0 +1,8 @@
+# Created by .ignore support plugin (hsz.mobi)
+
+.idea/*
+.idea/inspectionProfiles/
+.idea/modules.xml
+.idea/react-native-reanimated-header.iml
+.idea/workspace.xml
+node_modules

@@ -1,0 +1,41 @@
+{
+  "name": "@killerwink/react-native-reanimated-header",
+  "version": "1.0.0",
+  "description": "react native header scroll using reanimated library",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KillerWink/react-native-reanimated-header.git"
+  },
+  "keywords": [
+    "react",
+    "native",
+    "scrollable",
+    "reanimated",
+    "header"
+  ],
+  "author": "Thomas Gambina <thomas.gambina@gmail.com> (http://killerwink.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/KillerWink/react-native-reanimated-header/issues"
+  },
+  "homepage": "https://github.com/KillerWink/react-native-reanimated-header#readme",
+  "peerDependencies": {
+    "react": ">= 16.0.0",
+    "prop-types": ">= 15.7.2",
+    "react-native": ">= 0.60.0"
+  },
+  "devDependencies": {
+    "prop-types": "^15.7.2",
+    "react": "^16.12.0",
+    "react-native": "^0.61.5"
+  },
+  "dependencies": {
+    "react-native-gesture-handler": "1.5.3",
+    "react-native-reanimated": "1.4.0",
+    "styled-components": "^4.4.1"
+  }
+}
