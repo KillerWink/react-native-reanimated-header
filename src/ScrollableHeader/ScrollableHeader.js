@@ -1,36 +1,33 @@
 import React, { Component } from 'react';
 import Animated from 'react-native-reanimated';
-import { DEFAULT_PROPS_ANIMATED_REFRESH } from './config';
-
+import { DEFAULT_PROPS_SCROLLABLE } from './config';
 
 const { cond, set, lessThan } = Animated;
 
-class ScrollableHeader extends Component {
+const ScrollableHeader = ({ options = {}, children }) => {
 
-    constructor(props) {
-        super(props);
+    const {
+        scrollDistance = DEFAULT_PROPS_SCROLLABLE.scrollDistance,
+    } = options;
 
-        this.headerDiffClamp = Animated.diffClamp(set(reanimatedScroll, cond(lessThan(reanimatedScroll, 0), 0, reanimatedScroll)), 0, 100);
+    const headerDiffClamp = Animated.diffClamp(set(reanimatedScroll, cond(lessThan(reanimatedScroll, 0), 0, reanimatedScroll)), 0, scrollDistance);
 
-        this.headerTranslate = Animated.interpolate(this.headerDiffClamp, {
-            inputRange: [0, 100],
-            outputRange: [0, -100],
-            extrapolate: 'clamp',
-        });
-    }
+    const headerTranslate = Animated.interpolate(headerDiffClamp, {
+        inputRange: [0, scrollDistance],
+        outputRange: [0, -scrollDistance],
+        extrapolate: 'clamp',
+    });
 
-    render() {
-        return (
-            <Animated.View
-                style={{
-                    transform: [{translateY: this.headerTranslate}],
-                    height: 0,
-                }}
-            >
-                {this.props.children}
-            </Animated.View>
-        );
-    }
+    return (
+        <Animated.View
+            style={{
+                transform: [{translateY: headerTranslate}],
+                height: 0,
+            }}
+        >
+            {children}
+        </Animated.View>
+    );
 }
 
 
