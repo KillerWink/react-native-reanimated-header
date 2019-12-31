@@ -5,7 +5,7 @@ import changeSVGColor from '@killerwink/lottie-react-native-color';
 import { DEFAULT_PROPS_ANIMATED_REFRESH } from './config';
 import { usePanAnimation } from '../PanContext';
 
-export const HeaderRefreshAnimation = ({ options }) => {
+const HeaderRefreshAnimation = ({ options }) => {
 
     const { panDistance, panReleased } = usePanAnimation();
     const [ progress ] = useState(new Animated.Value(0));
@@ -137,3 +137,5 @@ export const HeaderRefreshAnimation = ({ options }) => {
         </View>
     );
 };
+
+export default HeaderRefreshAnimation;
