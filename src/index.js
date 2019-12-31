@@ -7,7 +7,7 @@ export {
     PanContext,
     PanProvider,
     usePanAnimation,
+    HeaderRefreshAnimation,
     ScrollContainer,
-    ScrollableHeader,
-    HeaderRefreshAnimation
+    ScrollableHeader
 };
