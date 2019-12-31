@@ -1,6 +1,6 @@
 {
   "name": "@killerwink/react-native-reanimated-header",
-  "version": "1.1.2",
+  "version": "1.2.2",
   "description": "react native header scroll using reanimated library",
   "main": "src/index.js",
   "scripts": {
