@@ -1,6 +1,6 @@
 {
   "name": "@killerwink/react-native-reanimated-header",
-  "version": "1.0.2",
+  "version": "1.1.2",
   "description": "react native header scroll using reanimated library",
   "main": "src/index.js",
   "scripts": {
@@ -36,6 +36,8 @@
     "react-native": "^0.61.5"
   },
   "dependencies": {
+    "@killerwink/lottie-react-native-color": "1.0.2",
+    "lottie-react-native": "3.3.2",
     "styled-components": "^4.4.1"
   }
 }

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Animated from 'react-native-reanimated';
+import { DEFAULT_PROPS_ANIMATED_REFRESH } from './config';
 
 
 const { cond, set, lessThan } = Animated;
