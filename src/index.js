@@ -9,5 +9,5 @@ export {
     usePanAnimation,
     ScrollContainer,
     ScrollableHeader,
-    HeaderRefreshAnimation,
+    HeaderRefreshAnimation
 };
